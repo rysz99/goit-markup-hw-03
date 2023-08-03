@@ -1,8 +1,27 @@
+*,
+*::before
+*::after
+{
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: 'Roboto', sans-serif;
     color: var(--body-color);
     background-color: var(--background-color);
+}
+
+.hidden
+{
+    display: none;
+}
+
+.container
+{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo
@@ -34,9 +53,55 @@ body
 .list
 {
     list-style: none;
+    display: flex;
+    gap: 10px;
 }
 
-.nav
+.list.wrapped
+{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list.wrapped > li
+{
+    flex-basis: calc((100%-20px)/3);
+    margin: 0 auto;
+}
+
+.list.filters
+{
+    justify-content: center;
+    margin-bottom: 65px;
+    gap: 24px;
+}
+
+.list.non-wrapped
+{
+    justify-content: center;
+    align-items:center;
+    gap: 24px;
+}
+
+.border
+{
+    border: 1px solid #E7E9FC;
+}
+
+.portfolio-image
+{
+    display: block;
+}
+
+.ad-li
+{
+    width: 264px;
+}
+
+
+
+.nav-link
 {
     font-weight: 500;
     font-size: 16px;
@@ -45,8 +110,8 @@ body
     color: var(--logo-and-link-color);
 }
 
-.nav:hover,
-.nav:focus
+.nav-link:hover,
+.nav-link:focus
 {
     color: var(--click-and-focus);
 }
@@ -75,14 +140,24 @@ body
     background-color: var(--logo-and-link-color);
 }
 
+.section.center
+{
+    text-align: center;
+}
+
 .first-header
 {
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    width: 496px;
+    padding-top: 188px;
+    text-align: center;
+    margin-left: 472px;
 }
+
+
 
 .first-button
 {
@@ -94,6 +169,12 @@ body
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    display: inline-flex;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 188px;
+    align-items: flex-start;
+    padding: 16px 32px;
 }
 
 .first-button:hover,
@@ -129,6 +210,17 @@ body
     color: var(--logo-and-link-color);
 }
 
+.second-header.margin
+{
+    margin-bottom: 72px;
+}
+
+.activity-section .second-header.margin
+{
+    margin-bottom: 72px;
+    margin-top: 120px;
+}
+
 .bold-second-header
 {
     font-size: 20px;
@@ -143,16 +235,27 @@ body
 .another-section
 {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.activity-section
+{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background-color: #ffffff;
 }
 
 .list-item
 {
     background-color: #ffffff;
+    text-align: center;
 }
 
 .navy-background
 {
     background-color: var(--logo-and-link-color);
+    padding: 140px 1020px 100px 156px;
 }
 
 .footer-paragraph
@@ -183,6 +286,8 @@ body
     color: var(--brand-color);
     background-color: var(--footer-paragraph-and-logo);
     cursor: pointer;
+    border-radius: 4px;
+    padding: 12px 24px;
 }
 
 .other-buttons:hover,
