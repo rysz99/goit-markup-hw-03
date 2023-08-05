@@ -12,16 +12,91 @@ body
     background-color: var(--background-color);
 }
 
-.hidden
+img
 {
-    display: none;
+    display: block;
+    width: 100%;
+    height: auto;
 }
+
+h1
+{
+    margin: 0 auto;
+    width: 496px;
+}
+
+h2,h3,p
+{
+    margin: 0;
+}
+
+button
+{
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.benefits-section
+{
+    padding: 120px 0;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+header
+{
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.ad-li
+{
+    width: 264px;
+}
+
+.visually-hidden 
+{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .container
 {
     width: 1158px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container.navigation-address
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo-link
+{
+    display: flex;
+    align-items: center;
 }
 
 .logo
@@ -52,32 +127,38 @@ body
 
 .list
 {
-    list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 40px;
+}
+
+.navigation-list
+{
+    margin: 0 0 0 76px;
+    padding: 0;
 }
 
 .list.wrapped
 {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    padding-bottom: 120px;
 }
 
 .list.wrapped > li
 {
-    flex-basis: calc((100%-20px)/3);
-    margin: 0 auto;
+    flex-basis: calc((100%-48px)/2);
 }
 
 .list.filters
 {
     justify-content: center;
-    margin-bottom: 65px;
+    margin-bottom: 72px;
+    margin-top: 96px;
     gap: 24px;
 }
 
-.list.non-wrapped
+.list.benefits-list
 {
     justify-content: center;
     align-items:center;
@@ -87,16 +168,6 @@ body
 .border
 {
     border: 1px solid #E7E9FC;
-}
-
-.portfolio-image
-{
-    display: block;
-}
-
-.ad-li
-{
-    width: 264px;
 }
 
 
@@ -119,6 +190,7 @@ body
 .adress
 {
     font-style: normal;
+    margin: 0 0 0 332px;
 }
 
 .adress-link
@@ -140,9 +212,11 @@ body
     background-color: var(--logo-and-link-color);
 }
 
-.section.center
+.section.header-and-button
 {
     text-align: center;
+    padding: 188px 0;
+    border: none;
 }
 
 .first-header
@@ -151,10 +225,9 @@ body
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #ffffff;
-    width: 496px;
-    padding-top: 188px;
     text-align: center;
-    margin-left: 472px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 
@@ -168,11 +241,8 @@ body
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    cursor: pointer;
     display: inline-flex;
-    border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 188px;
     align-items: flex-start;
     padding: 16px 32px;
 }
@@ -180,6 +250,28 @@ body
 .first-button:hover,
 .first-button:focus
 {
+    background-color: #404bbf;
+}
+
+.other-buttons
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--brand-color);
+    background-color: var(--footer-paragraph-and-logo);
+    padding: 12px 24px;
+    border: 1px solid #E7E9FC;
+}
+
+
+
+.other-buttons:hover,
+.other-buttons:focus
+{
+    color: #ffffff;
     background-color: #404bbf;
 }
 
@@ -218,7 +310,6 @@ body
 .activity-section .second-header.margin
 {
     margin-bottom: 72px;
-    margin-top: 120px;
 }
 
 .bold-second-header
@@ -241,8 +332,7 @@ body
 
 .activity-section
 {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding: 120px 0;
     background-color: #ffffff;
 }
 
@@ -276,26 +366,6 @@ body
     color: var(--click-and-focus);
 }
 
-.other-buttons
-{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--brand-color);
-    background-color: var(--footer-paragraph-and-logo);
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 12px 24px;
-}
-
-.other-buttons:hover,
-.other-buttons:focus
-{
-    color: #ffffff;
-    background-color: #404bbf;
-}
 
 :root
 {
