@@ -131,18 +131,32 @@ header
     gap: 40px;
 }
 
+.list.activity-list
+{
+    gap: 24px;
+}
+
 .navigation-list
 {
     margin: 0 0 0 76px;
-    padding: 0;
+    padding: 24px 0;
+}
+
+.list.team-list
+{
+    gap: 24px;
+    display: flex;
+}
+
+.personal-description
+{
+    padding: 32px 0;
 }
 
 .list.wrapped
 {
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding-bottom: 120px;
+    gap: 48px 24px;
 }
 
 .list.wrapped > li
@@ -154,7 +168,6 @@ header
 {
     justify-content: center;
     margin-bottom: 72px;
-    margin-top: 96px;
     gap: 24px;
 }
 
@@ -190,7 +203,7 @@ header
 .adress
 {
     font-style: normal;
-    margin: 0 0 0 332px;
+    margin-left: auto;
 }
 
 .adress-link
@@ -217,6 +230,11 @@ header
     text-align: center;
     padding: 188px 0;
     border: none;
+}
+
+.research-section
+{
+    padding: 96px 0 120px 0;
 }
 
 .first-header
@@ -282,6 +300,7 @@ header
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--logo-and-link-color);
+    margin-bottom: 8px;
 }
 
 .paragraph
@@ -332,8 +351,7 @@ header
 
 .activity-section
 {
-    padding: 120px 0;
-    background-color: #ffffff;
+    padding-bottom: 120px;
 }
 
 .list-item
@@ -345,7 +363,7 @@ header
 .navy-background
 {
     background-color: var(--logo-and-link-color);
-    padding: 140px 1020px 100px 156px;
+    padding: 100px 0;
 }
 
 .footer-paragraph
@@ -353,6 +371,7 @@ header
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-paragraph-and-logo);
+    margin-top: 17px;
 }
 
 .second-adress-link
